@@ -35,7 +35,6 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN PAGE LEVEL PLUGINS -->
         <link href="../assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
-
         <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
@@ -65,7 +64,6 @@ License: You must have a valid license purchased only from themeforest(the above
                             <img src="../assets/layouts/layout/img/logo.png" alt="logo" class="logo-default" /> </a>
                         <div class="menu-toggler sidebar-toggler">
                             <span></span>
-
                         </div>
                     </div>
                     <!-- END LOGO -->
@@ -511,7 +509,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         </a>
                                     </li>
                                     <li class="nav-item  ">
-                                        <a href="" class="nav-link ">
+                                        <a href="attributes.html" class="nav-link ">
                                             <span class="title">Attributes</span>
                                         </a>
                                     </li>
@@ -758,7 +756,6 @@ License: You must have a valid license purchased only from themeforest(the above
                 <!-- BEGIN CONTENT -->
                 <div class="page-content-wrapper">
                     <!-- BEGIN CONTENT BODY -->
-                        <!-- end content Body -->
                     <div class="page-content">
                         <!-- BEGIN PAGE HEADER-->
                         <!-- BEGIN PAGE BAR -->
@@ -769,7 +766,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <i class="fa fa-circle"></i>
                                 </li>
                                 <li>
-                                    <span>Categories</span>
+                                    <span>Manufacturer</span>
                                 </li>
                             </ul>
                             <div class="page-toolbar">
@@ -782,359 +779,140 @@ License: You must have a valid license purchased only from themeforest(the above
                         </div>
                         <!-- END PAGE BAR -->
                         <!-- BEGIN PAGE TITLE-->
-                        <h1 class="page-title">Categories
-                            <small>manage product categories</small>
+                        <h1 class="page-title"> Manufacturer
+                            <small></small>
                         </h1>
                         <!-- END PAGE TITLE-->
                         <!-- END PAGE HEADER-->
-                        <!-- begin content Body -->
-                       <div class="wrapper">
-                            <div class="row">
-                                <div class="col-md-4">
-                                <div class="actions ">
+                        <div class="row">
+                            <div class="col-md-12 text-right">
+                                <button type="reset" class="btn btn-primary mb">Reset</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- BEGIN SAMPLE TABLE PORTLET-->
+                                <div class="portlet light bordered">
+                                    <div class="portlet-title">
+                                        <div class="caption">
 
-                                    <div class="btn-group">
-                                        <a class="btn green btn-outline btn-sm " href="#" data-toggle="dropdown">
+                                            <span class="caption-subject font-green bold uppercase">Manufacturer List</span>
+                                        </div>
 
-                                            <span class="hidden-xs"> Sort By </span>
-                                            <i class="fa fa-angle-down"></i>
-                                        </a>
-                                        <ul class="dropdown-menu center ">
-                                            <li>
-                                                <a href="#"> Date </a>
-                                            </li>
-                                            <li>
-                                                <a href="#"> Label </a>
-                                            </li>
-                                            <li>
-                                                <a href="#"> Order </a>
-                                            </li>
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="table-scrollable">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th> # </th>
+                                                    <th> Logo </th>
+                                                    <th> Manufacturere name </th>
+                                                    <th> Edit </th>
+                                                    <th> Delete </th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td> 1 </td>
+                                                    <td>
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <span class="btn green btn-file">
+                                                                <span class="fileinput-new"> Select file </span>
+                                                                <span class="fileinput-exists"> Change </span>
+                                                                <input type="file" name="..."> </span>
+                                                            <span class="fileinput-filename"> </span> &nbsp;
+                                                            <a href="javascript:;" class="close fileinput-exists" data-dismiss="fileinput"> </a>
+                                                        </div>
+                                                    </td>
+                                                    <td> Matriplex </td>
+                                                    <td> <button type="button" class="btn btn-default btn-circle">Edit</button> </td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary">Delete</button>
+                                                    </td>
+                                                </tr>
 
-                                        </ul>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
-                                <ul class="tree">
-                                    <li>
-                                        <input type="checkbox" checked="checked" id="c1" />
-                                        <label class="tree_label" for="c1">Category1</label>
-
-                                        <div class="actions inline hide-1">
-                                            <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                <i class="icon-pencil"></i>
-                                            </a>
-                                            <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                <i class="fa fa-plus"></i>
-                                            </a>
-                                            <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                <i class="icon-trash"></i>
-                                            </a>
-                                            <input type="checkbox" checked class="make-switch" id="test" data-size="mini">
-                                        </div>
+                            </div>
 
 
-                                        <ul>
-                                            <li>
-                                                <input type="checkbox" id="c-10" />
-                                                <label for="c-10" class="tree_label">Level 1</label>
-                                                <ul>
-                                                    <li><span class="tree_label">Level 2</span></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <input type="checkbox" id="c-11" />
-                                                <label for="c-11" class="tree_label">Level 1</label>
-                                                <ul>
-                                                    <li><span class="tree_label">Level 2</span></li>
-                                                    <span class="tree_label">Level 3</span>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="c-1" />
-                                        <label class="tree_label" for="c-1">Category2</label>
-                                        <div class="actions inline hide-2">
-                                            <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                <i class="icon-pencil"></i>
-                                            </a>
-                                            <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                <i class="fa fa-plus"></i>
-                                            </a>
-                                            <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                <i class="icon-trash"></i>
-                                            </a>
-                                            <input type="checkbox" checked class="make-switch" id="test" data-size="mini">
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                <input type="checkbox" id="c-2" />
-                                                <label for="c-2" class="tree_label">Level 1</label>
-                                                <ul>
-                                                    <li><span class="tree_label">Level 2</span></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <input type="checkbox" id="c-3" />
-                                                <label for="c-3" class="tree_label">Level 1</label>
-                                                <ul>
-                                                    <li><span class="tree_label">Level 2</span></li>
-                                                    <li>
-                                                        <input type="checkbox" id="c-4" />
-                                                        <label for="c-4" class="tree_label">Level 2</label>
-                                                        <ul>
-                                                            <li><span class="tree_label">Level 3</span></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
+                        <div class="col-md-6">
+                            <form class="form-horizontal form-row-seperated" action="#">
 
-                                    <li>
-                                        <input type="checkbox" id="c5" />
-                                        <label class="tree_label" for="c5">Category3</label>
-                                        <div class="actions inline hide-3">
-                                            <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                <i class="icon-pencil"></i>
-                                            </a>
-                                            <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                <i class="fa fa-plus"></i>
-                                            </a>
-                                            <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                <i class="icon-trash"></i>
-                                            </a>
-                                            <input type="checkbox" checked class="make-switch" id="test" data-size="mini">
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                <input type="checkbox" id="c6" />
-                                                <label for="c6" class="tree_label">Level 1</label>
-                                                <ul>
-                                                    <li><span class="tree_label">Level 2</span></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <input type="checkbox" id="c7" />
-                                                <label for="c7" class="tree_label">Level 1</label>
-                                                <ul>
-                                                    <li><span class="tree_label">Level 2</span></li>
-                                                    <li>
-                                                        <input type="checkbox" id="c8" />
-                                                        <label for="c8" class="tree_label">Level 2</label>
-                                                        <ul>
-                                                            <li><span class="tree_label">Level 3</span></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="c9" />
-                                        <label class="tree_label" for="c9">Category4</label>
-                                        <div class="actions inline hide-4">
-                                            <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                <i class="icon-pencil"></i>
-                                            </a>
-                                            <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                <i class="fa fa-plus"></i>
-                                            </a>
-                                            <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                                <i class="icon-trash"></i>
-                                            </a>
-                                            <input type="checkbox" checked class="make-switch" id="test" data-size="mini">
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                <input type="checkbox" id="c10" />
-                                                <label for="c10" class="tree_label">Level 1</label>
-                                                <ul>
-                                                    <li><span class="tree_label">Level 2</span></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <input type="checkbox" id="c11" />
-                                                <label for="c11" class="tree_label">Level 1</label>
-                                                <ul>
-                                                    <li><span class="tree_label">Level 2</span></li>
-                                                    <li>
-                                                        <input type="checkbox" id="c12" />
-                                                        <label for="c12" class="tree_label">Level 2</label>
-                                                        <ul>
-                                                            <li><span class="tree_label">Level 3</span></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
 
-                                </ul>
-                                </div>
-
-                                <div class="col-md-8">
-                                    <form class="form-horizontal form-row-seperated" action="#">
-                                        <div class="portlet">
-                                            <div class="portlet-title">
-                                                <div class="caption">
-                                                    </i>Category </div>
-                                                <div class="actions btn-set">
-                                                    <button type="button" name="back" class="btn btn-secondary-outline">
-                                                        <i class="fa fa-angle-left"></i> Back</button>
-                                                    <button class="btn btn-secondary-outline">
-                                                        <i class="fa fa-reply"></i> Reset</button>
-                                                    <button class="btn btn-success">
-                                                        <i class="fa fa-check-circle"></i> Save & Continue Edit</button>
-
-                                                </div>
-                                            </div>
-                                            <div class="portlet-body">
-                                                <div class="tabbable-bordered">
-                                                    <ul class="nav nav-tabs">
-                                                        <li class="active">
-                                                            <a href="#tab_label" data-toggle="tab"> Label </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#tab_general" data-toggle="tab"> General </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#tab_data" data-toggle="tab"> Data </a>
-                                                        </li>
-
-                                                    </ul>
-                                                    <div class="tab-content">
-                                                        <div class="tab-pane active" id="tab_label">
-                                                            <div class="form-body">
-                                                                <div class="form-group">
-                                                                    <label class="col-md-4 control-label">Display Label:
-                                                                        <span class="required"> * </span>
-                                                                    </label>
-                                                                    <div class="col-md-8">
-                                                                        <input type="text" class="form-control input-medium" value="English" name="product[name]" placeholder=""> </div>
-                                                                </div>
+                                                <div class="tab-pane" id="tab_general">
+                                                    <div class="form-body">
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Manufacturer Name:</label>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control" name="product[meta_title]" maxlength="100" placeholder="">
 
                                                             </div>
                                                         </div>
-                                                        <div class="tab-pane" id="tab_general">
-                                                            <div class="form-body">
-                                                                <div class="form-group">
-                                                                    <label class="col-md-4 control-label">Category Label:</label>
-                                                                    <div class="col-md-8">
-                                                                        <input type="text" class="form-control" name="product[meta_title]" maxlength="100" placeholder="">
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">product Category:</label>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control" name="product[meta_title]" maxlength="100" placeholder="">
 
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="col-md-4 control-label">SEO:</label>
-                                                                    <div class="col-md-8">
-                                                                        <input type="text" class="form-control" name="product[meta_title]" maxlength="100" placeholder="">
-
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="col-md-4 control-label">Description:</label>
-                                                                    <div class="col-md-8">
-                                                                        <textarea class="form-control maxlength-handler" rows="6" name="product[meta_keywords]" maxlength="1000"></textarea>
-
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="col-md-4 control-label">Meta Title:</label>
-                                                                    <div class="col-md-8">
-                                                                        <input type="text" class="form-control" name="product[meta_title]" maxlength="100" placeholder="">
-
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="col-md-4 control-label">Meta Description:</label>
-                                                                    <div class="col-md-8">
-                                                                        <textarea class="form-control maxlength-handler" rows="6" name="product[meta_description]" maxlength="255"></textarea>
-
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="col-md-4 control-label">Meta Keyword:</label>
-                                                                    <div class="col-md-8">
-                                                                        <input type="text" class="form-control input-medium" name="product[meta_title]" maxlength="100" placeholder="">
-
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="tab-pane" id="tab_data">
-                                                            <div class="form-group">
-                                                                <label class="col-md-4 control-label">Parent Id
-                                                                    <span class="required"> *:</span>
-                                                                </label>
-                                                                <div class="col-md-8">
-                                                                    <select class="table-group-action-input form-control input-medium" name="product[tax_class]">
-                                                                        <option value="">Select...</option>
-                                                                        <option value="1">Id1</option>
-                                                                        <option value="0">Id2</option>
-                                                                        <option value="0">Id3</option>
-                                                                        <option value="0">Id4</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group ">
-                                                                <label class="control-label col-md-4">Image:</label>
-                                                                <div class="col-md-8">
-                                                                    <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                                        <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"> </div>
-                                                                        <div>
-                                                                <span class="btn red btn-outline btn-file">
-                                                                    <span class="fileinput-new"> Select image </span>
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Logo:</label>
+                                                            <div class="col-md-8">
+                                                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"> </div>
+                                                                    <div>
+                                                                <span class="btn green btn-outline btn-file">
+                                                                    <span class="fileinput-new"> Select Logo </span>
                                                                     <span class="fileinput-exists"> Change </span>
                                                                     <input type="file" name="..."> </span>
-                                                                            <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput"> Remove </a>
+                                                                        <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput"> Remove </a>
 
-                                                                            <div class="form-group mt">
-                                                                                <div class="mt-checkbox-list ">
-                                                                                    <label class="mt-checkbox"> Is Searchable
-                                                                                        <input type="checkbox" value="1" name="test" />
-                                                                                        <span></span>
-                                                                                    </label>
 
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="form-group">
-                                                                <label class="col-md-4 control-label">Sort Order:</label>
-                                                                <div class="col-md-8">
-                                                                    <input type="text" class="form-control input-medium" name="product[meta_title]" maxlength="100" placeholder="">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Location:</label>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control input-medium" name="product[meta_title]" maxlength="100" placeholder="">
 
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="col-md-4 control-label">Status:
 
-                                                                </label>
-                                                                <div class="col-md-8">
-                                                                    <select class="table-group-action-input form-control input-medium" name="product[tax_class]">
-                                                                        <option value="0">Active</option>
-                                                                        <option value="1">Inactive</option>
-
-                                                                    </select>
-                                                                    <button type="submit" class="btn btn-primary mt">Submit</button
-                                                                </div>
                                                             </div>
                                                         </div>
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Discount:</label>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class=" inline form-control input-medium" name="product[meta_title]" maxlength="100" placeholder="">
+                                                                <span class="inline">%</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Sort Order:</label>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control input-medium" name="product[meta_title]" maxlength="100" placeholder="">
+                                                                <button type="submit" class="btn btn-primary mt">Submit</button>
+                                                            </div>
+                                                        </div>
+
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </form>
+                                            </div>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                            </div>
-                       </div>
+                                    </div>
 
-                    </div>
+
 
                     <!-- END CONTENT BODY -->
-                </div>
+
                 <!-- END CONTENT -->
                 <!-- BEGIN QUICK SIDEBAR -->
                 <a href="javascript:;" class="page-quick-sidebar-toggler">
