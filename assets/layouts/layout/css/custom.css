@@ -16,7 +16,9 @@ body {
 */
 .tree {
     margin: 20px 0;
-    padding-left:15px; }
+    padding-left:15px;
+    list-style: none;
+}
 
 .tree input {
     position: absolute;
@@ -45,7 +47,7 @@ body {
 */
 .tree_label {
     position: relative;
-    display: inline-block;
+    display: block;
     font-size: 16px;
 }
 /*.hide-1{*/
@@ -62,22 +64,7 @@ label.tree_label:hover .hide-1{
 /* ————————————————————–
   Tree expanded icon
 */
-label.tree_label:before {
-    background: #000;
-    color: #fff;
-    position: relative;
-    z-index: 1;
-    float: left;
-    margin: 0 1em 0 -2em;
-    width: 1em;
-    height: 1em;
-    border-radius: 1em;
-    content: '+';
-    text-align: center;
-    line-height: .9em;
-}
 
-:checked ~ label.tree_label:before { content: '–'; }
 
 /* ————————————————————–
   Tree branches
@@ -96,7 +83,7 @@ label.tree_label:before {
     position: absolute;
     top: 0;
     left: -1.5em;
-    display: block;
+    display: none;
     height: 0.5em;
     width: 1em;
     border-bottom: 1px solid #777;
@@ -140,6 +127,9 @@ label.tree_label:after { border-bottom: 0; }
 .ml{
     margin-left:10px;
 }
+.mr{
+    margin-right:15px;
+}
 .m-left{
     margin-left:15px !important;
 }
@@ -147,7 +137,7 @@ label.tree_label:after { border-bottom: 0; }
     display: none;
 }
 ul.tree li:hover .hide-1{
-    display:inline-block;
+    display:block;
 }
 ul.tree li:hover .hide-2{
     display:inline-block;
@@ -159,7 +149,7 @@ ul.tree li:hover .hide-4{
     display:inline-block;
 }
 .space-1{
-    margin-top:40px;
+    margin-top:15px;
 }
 .space-2{
     margin-top: 35px !important;;
@@ -174,4 +164,14 @@ ul.tree li:hover .hide-4{
 }
 .set{
     padding-left:0 ;
+}
+.bc-w{
+    background-color: #fff;
+    padding: 10px 20px;
+}
+.icon-g{
+    display: none;
+}
+.flash-1:hover .icon-g{
+    display: block;
 }
