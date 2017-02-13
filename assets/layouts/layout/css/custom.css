@@ -87,9 +87,8 @@ label.tree_label:before {
     top: 0;
     bottom: 0;
     left: -.5em;
-    display: block;
     width: 0;
-    border-left: 1px solid #777;
+    border-left: 0 solid #777;
     content: "";
 }
 
@@ -141,6 +140,9 @@ label.tree_label:after { border-bottom: 0; }
 .ml{
     margin-left:10px;
 }
+.m-left{
+    margin-left:15px !important;
+}
 .hide-1,.hide-2,.hide-3,.hide-4{
     display: none;
 }
@@ -155,4 +157,21 @@ ul.tree li:hover .hide-3{
 }
 ul.tree li:hover .hide-4{
     display:inline-block;
+}
+.space-1{
+    margin-top:40px;
+}
+.space-2{
+    margin-top: 35px !important;;
+
+}
+.space-3{
+    margin-top:35px !important;
+
+}
+.input-vsmall{
+    width:50px;
+}
+.set{
+    padding-left:0 ;
 }

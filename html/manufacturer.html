@@ -61,7 +61,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <!-- BEGIN LOGO -->
                     <div class="page-logo">
                         <a href="index.html">
-                            <img src="../assets/layouts/layout/img/logo.png" alt="logo" class="logo-default" /> </a>
+                            <img src="../assets/layouts/layout/img/admin-logo.png" alt="logo" class="logo-default" /> </a>
                         <div class="menu-toggler sidebar-toggler">
                             <span></span>
                         </div>
@@ -504,7 +504,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         </a>
                                     </li>
                                     <li class="nav-item  ">
-                                        <a href="inventory.html" class="nav-link ">
+                                        <a href="attribute-group.html" class="nav-link ">
                                             <span class="title">Attribute Groups</span>
                                         </a>
                                     </li>
@@ -784,20 +784,13 @@ License: You must have a valid license purchased only from themeforest(the above
                         </h1>
                         <!-- END PAGE TITLE-->
                         <!-- END PAGE HEADER-->
-                        <div class="row">
-                            <div class="col-md-12 text-right">
-                                <button type="reset" class="btn btn-primary mb">Reset</button>
-                            </div>
-                        </div>
+
                         <div class="row">
                             <div class="col-md-6">
                                 <!-- BEGIN SAMPLE TABLE PORTLET-->
-                                <div class="portlet light bordered">
+                                <div class="portlet ">
                                     <div class="portlet-title">
-                                        <div class="caption">
-
-                                            <span class="caption-subject font-green bold uppercase">Manufacturer List</span>
-                                        </div>
+                                        <h2>Manufacturer List</h2>
 
                                     </div>
                                     <div class="portlet-body">
@@ -805,30 +798,25 @@ License: You must have a valid license purchased only from themeforest(the above
                                             <table class="table table-hover">
                                                 <thead>
                                                 <tr>
-                                                    <th> # </th>
-                                                    <th> Logo </th>
-                                                    <th> Manufacturere name </th>
-                                                    <th> Edit </th>
-                                                    <th> Delete </th>
+                                                   
                                                 </tr>
                                                 </thead>
                                                 <tbody>
                                                 <tr>
-                                                    <td> 1 </td>
+
                                                     <td>
-                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                            <span class="btn green btn-file">
-                                                                <span class="fileinput-new"> Select file </span>
-                                                                <span class="fileinput-exists"> Change </span>
-                                                                <input type="file" name="..."> </span>
-                                                            <span class="fileinput-filename"> </span> &nbsp;
-                                                            <a href="javascript:;" class="close fileinput-exists" data-dismiss="fileinput"> </a>
-                                                        </div>
+                                                        <img src="http://placehold.it/125x125" alt="">
                                                     </td>
-                                                    <td> Matriplex </td>
-                                                    <td> <button type="button" class="btn btn-default btn-circle">Edit</button> </td>
+                                                    <td><h3 class="space-1"> Matriplex</h3> </td>
                                                     <td>
-                                                        <button type="button" class="btn btn-primary">Delete</button>
+                                                        <button type="button" class="btn btn-default btn-lg space-2 ">
+                                                            <i class="icon-pencil"></i>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-default btn-lg space-3">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
                                                     </td>
                                                 </tr>
 
@@ -839,10 +827,9 @@ License: You must have a valid license purchased only from themeforest(the above
                                 </div>
                             </div>
 
-
-                        <div class="col-md-6">
-                            <form class="form-horizontal form-row-seperated" action="#">
-
+                            <div class="col-md-6">
+                                <h2>Manufacturer Form</h2>
+                                    <form class="form-horizontal form-row-seperated mt" action="#">
 
                                                 <div class="tab-pane" id="tab_general">
                                                     <div class="form-body">
@@ -864,23 +851,19 @@ License: You must have a valid license purchased only from themeforest(the above
                                                             <label class="col-md-4 control-label">Logo:</label>
                                                             <div class="col-md-8">
                                                                 <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"> </div>
-                                                                    <div>
-                                                                <span class="btn green btn-outline btn-file">
-                                                                    <span class="fileinput-new"> Select Logo </span>
-                                                                    <span class="fileinput-exists"> Change </span>
-                                                                    <input type="file" name="..."> </span>
-                                                                        <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput"> Remove </a>
-
-
-                                                                    </div>
+                                                            <span class="btn green btn-file">
+                                                                <span class="fileinput-new"> Select file </span>
+                                                                <span class="fileinput-exists"> Change </span>
+                                                                <input type="file" name="..."> </span>
+                                                                    <span class="fileinput-filename"> </span> &nbsp;
+                                                                    <a href="javascript:;" class="close fileinput-exists" data-dismiss="fileinput"> </a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
                                                             <label class="col-md-4 control-label">Location:</label>
                                                             <div class="col-md-8">
-                                                                <input type="text" class="form-control input-medium" name="product[meta_title]" maxlength="100" placeholder="">
+                                                                <input type="text" class="form-control" name="product[meta_title]" maxlength="100" placeholder="">
 
 
                                                             </div>
@@ -888,7 +871,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                         <div class="form-group">
                                                             <label class="col-md-4 control-label">Discount:</label>
                                                             <div class="col-md-8">
-                                                                <input type="text" class=" inline form-control input-medium" name="product[meta_title]" maxlength="100" placeholder="">
+                                                                <input type="text" class=" inline form-control input-vsmall" name="product[meta_title]" maxlength="100" placeholder="">
                                                                 <span class="inline">%</span>
 
                                                             </div>
@@ -896,7 +879,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                         <div class="form-group">
                                                             <label class="col-md-4 control-label">Sort Order:</label>
                                                             <div class="col-md-8">
-                                                                <input type="text" class="form-control input-medium" name="product[meta_title]" maxlength="100" placeholder="">
+                                                                <input type="text" class="form-control input-vsmall" name="product[meta_title]" maxlength="100" placeholder="">
                                                                 <button type="submit" class="btn btn-primary mt">Submit</button>
                                                             </div>
                                                         </div>
@@ -905,15 +888,16 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                 </form>
                                             </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+
+
 
 
 
                     <!-- END CONTENT BODY -->
-
+                    </div>
                 <!-- END CONTENT -->
+                </div>
                 <!-- BEGIN QUICK SIDEBAR -->
                 <a href="javascript:;" class="page-quick-sidebar-toggler">
                     <i class="icon-login"></i>
@@ -1479,9 +1463,8 @@ License: You must have a valid license purchased only from themeforest(the above
             <!-- END CONTAINER -->
             <!-- BEGIN FOOTER -->
             <div class="page-footer">
-                <div class="page-footer-inner"> 2016 &copy; Metronic Theme By
-                    <a target="_blank" href="http://keenthemes.com">Keenthemes</a> &nbsp;|&nbsp;
-                    <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" title="Purchase Metronic just for 27$ and get lifetime updates for free" target="_blank">Purchase Metronic!</a>
+                <div class="page-footer-inner"> 2017 &copy; Agriplex Admin Theme By
+                    <a target="_blank" href="http://www.dzineden.com">Dzineden</a>
                 </div>
                 <div class="scroll-to-top">
                     <i class="icon-arrow-up"></i>
