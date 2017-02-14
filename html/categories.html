@@ -876,15 +876,9 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <div class="portlet light portlet-fit portlet-form bordered">
                                         <div class="portlet-title">
                                             <div class="caption">
-                                                <span class="caption-subject sbold">Category</span>
+                                                <span class="caption-subject">Category Form</span>
                                             </div>
                                             <div class="actions">
-                                                <div class="btn-group btn-group-devided" data-toggle="buttons">
-                                                    <label class="btn btn-transparent red btn-outline btn-circle btn-sm active">
-                                                        <input type="radio" name="options" class="toggle" id="option1">Actions</label>
-                                                    <label class="btn btn-transparent red btn-outline btn-circle btn-sm">
-                                                        <input type="radio" name="options" class="toggle" id="option2">Settings</label>
-                                                </div>
                                             </div>
                                         </div>
                                         <div class="portlet-body">
@@ -892,68 +886,60 @@ License: You must have a valid license purchased only from themeforest(the above
                                             <form action="#" id="form_sample_1" class="form-horizontal">
                                                 <div class="form-body">
                                                     <div class="alert alert-danger display-hide">
-                                                        <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
-                                                    <div class="alert alert-success display-hide">
-                                                        <button class="close" data-close="alert"></button> Your form validation is successful! </div>
+                                                        <button class="close" data-close="alert"></button> Check errors.
+                                                    </div>
+                                                    <h4 class="form-section">General</h4>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">Name
+                                                        <label for="category_label" class="control-label col-md-3">Category Label
                                                             <span class="required"> * </span>
                                                         </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" name="name" data-required="1" class="form-control" /> </div>
+                                                        <div class="col-md-8">
+                                                            <input id="category_label" type="text" name="name" data-required="1" class="form-control" /> </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">Email
+                                                        <label for="seo" class="control-label col-md-3">Seo Label
                                                             <span class="required"> * </span>
                                                         </label>
-                                                        <div class="col-md-4">
-                                                            <input name="email" type="text" class="form-control" /> </div>
+                                                        <div class="col-md-8">
+                                                            <input id="seo" name="seo" type="text" class="form-control" /> </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">URL
-                                                            <span class="required"> * </span>
+                                                        <label class="control-label col-md-3">Description
                                                         </label>
-                                                        <div class="col-md-4">
-                                                            <input name="url" type="text" class="form-control" />
-                                                            <span class="help-block"> e.g: http://www.demo.com or http://demo.com </span>
+                                                        <div class="col-md-8">
+                                                            <textarea name="description" class="form-control"></textarea>
+                                                            <span class="help-block"> couple of lines on describing category </span>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">Number
+                                                        <label class="control-label col-md-3">Meta Title
                                                             <span class="required"> * </span>
                                                         </label>
-                                                        <div class="col-md-4">
-                                                            <input name="number" type="text" class="form-control" /> </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">Digits
-                                                            <span class="required"> * </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input name="digits" type="text" class="form-control" /> </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">Credit Card
-                                                            <span class="required"> * </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input name="creditcard" type="text" class="form-control" />
-                                                            <span class="help-block"> e.g: 5500 0000 0000 0004 </span>
+                                                        <div class="col-md-8">
+                                                            <input name="meta_title" type="text" class="form-control" />
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">Occupation&nbsp;&nbsp;</label>
-                                                        <div class="col-md-4">
-                                                            <input name="occupation" type="text" class="form-control" />
-                                                            <span class="help-block"> optional field </span>
+                                                        <label class="control-label col-md-3">Meta Description
+                                                        </label>
+                                                        <div class="col-md-8">
+                                                            <textarea name="meta_category" class="form-control"></textarea>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">Select
+                                                        <label class="control-label col-md-3">Meta Keywords
+                                                        </label>
+                                                        <div class="col-md-8">
+                                                            <textarea name="meta_keywords" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <h4 class="form-section">Data</h4>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">Parent Category
                                                             <span class="required"> * </span>
                                                         </label>
-                                                        <div class="col-md-4">
-                                                            <select class="form-control" name="select">
+                                                        <div class="col-md-6">
+                                                            <select class="form-control" name="parent_category" multiple>
                                                                 <option value="">Select...</option>
                                                                 <option value="Category 1">Category 1</option>
                                                                 <option value="Category 2">Category 2</option>
@@ -962,31 +948,56 @@ License: You must have a valid license purchased only from themeforest(the above
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">Multi Select
+                                                    <div class="form-group ">
+                                                        <label class="control-label col-md-3">Category Image
                                                             <span class="required"> * </span>
                                                         </label>
-                                                        <div class="col-md-4">
-                                                            <select class="form-control" name="select_multi" multiple>
-                                                                <option value="Category 1">Category 1</option>
-                                                                <option value="Category 2">Category 2</option>
-                                                                <option value="Category 3">Category 3</option>
-                                                                <option value="Category 4">Category 4</option>
-                                                                <option value="Category 5">Category 5</option>
-                                                            </select>
-                                                            <span class="help-block"> select max 3 options, min 1 option </span>
+                                                        <div class="col-md-8">
+                                                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                                <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;">
+                                                                </div>
+                                                                <span class="btn red btn-outline btn-file">
+                                                                    <span class="fileinput-new"> Select image </span>
+                                                                    <span class="fileinput-exists"> Change </span>
+                                                                    <input type="file" name="...">
+                                                                </span>
+                                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput"> Remove </a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">Input Group
+                                                        <label class="control-label col-md-3">
+                                                        </label>
+                                                        <div class="col-md-8">
+                                                            <label class="mt-checkbox">
+                                                                <input type="checkbox" value="1" name="is_searchable"> Is Category Searchable
+                                                                <span></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <h4 class="form-section">Display Label</h4>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">English
                                                             <span class="required"> * </span>
                                                         </label>
-                                                        <div class="col-md-4">
-                                                            <div class="input-group">
-                                                            <span class="input-group-addon">
-                                                                <i class="fa fa-envelope"></i>
-                                                            </span>
-                                                                <input type="text" class="form-control" name="input_group" placeholder="Email Address"> </div>
+                                                        <div class="col-md-8">
+                                                            <input name="category[meta][title]" type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">Kannada
+                                                            <span class="required"> * </span>
+                                                        </label>
+                                                        <div class="col-md-8">
+                                                            <input name="category[meta][title]" type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">Hindi
+                                                            <span class="required"> * </span>
+                                                        </label>
+                                                        <div class="col-md-8">
+                                                            <input name="category[meta][title]" type="text" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1000,7 +1011,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 </div>
                                             </form>
                                             <!-- END FORM-->
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
