@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 
+<!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.7
 Version: 4.7.1
 Author: KeenThemes
@@ -791,37 +791,66 @@ License: You must have a valid license purchased only from themeforest(the above
                         <!-- END PAGE HEADER-->
                             <section>
 
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <form class="form-horizontal form-row-seperated" action="#">
+                                <div class="portlet light portlet-fit portlet-form bordered">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <span class="caption-subject">Attribute Form</span>
+                                        </div>
+                                        <div class="actions">
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body">
+                                        <!-- BEGIN FORM-->
+                                        <form action="#" id="form_sample_1" class="form-horizontal">
                                             <div class="form-body">
-
+                                                <div class="alert alert-danger display-hide">
+                                                    <button class="close" data-close="alert"></button> Check errors.
+                                                </div>
+                                                <h4 class="form-section">Display Label</h4>
                                                 <div class="form-group">
-                                                    <label class="col-md-2 control-label">Display label:
+                                                    <label class="control-label col-md-3">English
                                                         <span class="required"> * </span>
                                                     </label>
-                                                    <div class="col-md-10">
-                                                        <input type="text" class="form-control input-medium" name="manufacturer[name]" placeholder=""> </div>
+                                                    <div class="col-md-8">
+                                                        <input name="category[meta][title]" type="text" class="form-control input-medium" />
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-md-2 control-label">Attribute Label:
+                                                    <label class="control-label col-md-3">Kannada
                                                         <span class="required"> * </span>
                                                     </label>
-                                                    <div class="col-md-10">
-                                                        <input type="text" class="form-control input-medium" name="manufacturer[category]" placeholder=""> </div>
+                                                    <div class="col-md-8">
+                                                        <input name="category[meta][title]" type="text" class="form-control input-medium" />
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-md-2 control-label">SEO:
+                                                    <label class="control-label col-md-3">Hindi
                                                         <span class="required"> * </span>
                                                     </label>
-                                                    <div class="col-md-10">
-                                                        <input type="text" class="form-control input-medium" name="manufacturer[category]" placeholder=""> </div>
+                                                    <div class="col-md-8">
+                                                        <input name="category[meta][title]" type="text" class="form-control input-medium" />
+                                                    </div>
+                                                </div>
+                                                <h4 class="form-section">General</h4>
+                                                <div class="form-group">
+                                                    <label for="category_label" class="control-label col-md-3">Attribute Label
+                                                        <span class="required"> * </span>
+                                                    </label>
+                                                    <div class="col-md-8">
+                                                        <input id="category_label" type="text" name="name" data-required="1" class="form-control" /> </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-md-2 control-label">Option Type:
+                                                    <label for="seo" class="control-label col-md-3">SEO Label
                                                         <span class="required"> * </span>
                                                     </label>
-                                                    <div class="col-md-10">
+                                                    <div class="col-md-8">
+                                                        <input id="seo" name="seo" type="text" class="form-control" /> </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Option Type:
+                                                        <span class="required"> * </span>
+                                                    </label>
+                                                    <div class="col-md-8">
                                                         <select class="table-group-action-input form-control input-medium " name="manufacturer[discount]" >
                                                             <option value="0">Select...</option>
                                                             <option value="1">Dropdown</option>
@@ -835,101 +864,51 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-md-2 control-label">Is Required:
+                                                    <label class="col-md-3 control-label">Is Required:
                                                         <span class="required"> * </span>
                                                     </label>
-                                                    <div class="col-md-10">
-                                                        <input type="checkbox" class="checkbox-primary">
+                                                    <div class="col-md-8">
+                                                        <label class="mt-checkbox ">
+                                                            <input type="checkbox" value="option1">                                                            <span></span>
+                                                        </label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-md-2 control-label">Is Varience:
+                                                    <label class="col-md-3 control-label">Is Varience:
                                                         <span class="required"> * </span>
                                                     </label>
-                                                    <div class="col-md-10">
-                                                        <input type="checkbox" class="checkbox-primary">
+                                                    <div class="col-md-8">
+                                                        <label class="mt-checkbox ">
+                                                            <input type="checkbox"  value="option1">                                                            <span></span>
+                                                        </label>
                                                     </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label class="col-md-2 control-label">Default Value:
+                                                <div class="form-group ">
+                                                    <label class="col-md-3 control-label">Default Value:
                                                         <span class="required"> * </span>
                                                     </label>
-                                                    <div class="col-md-10">
+                                                    <div class="col-md-8">
                                                         <input type="text" class="form-control input-medium" name="manufacturer[category]" placeholder=""> </div>
                                                 </div>
-                                                <div class="form-group last">
-                                                <h3 class="text-center">Swatch Option</h3>
-
+                                                <h4 class="form-section">Swatch Option</h4>
+                                                <div class="form-group">
                                                     <div class="col-md-12 set">
                                                         <div class="col-md-6 ">
-                                                        <input type="text" id="position-top-right" class="form-control demo" data-position="top left" value="#0088cc">
+                                                            <input type="text" id="position-top-left" class="form-control demo" data-position="top left" value="#0088cc">
                                                         </div>
 
                                                         <span class="col-md-6"><input type="text" class="form-control" placeholder="Name"></span>
                                                     </div>
                                                 </div>
 
-                                                <div class="portlet box ">
-                                                <div class="portlet-body">
-                                                        <h3 class="text-center">Attribute Values</h3>
-                                                        <div class="table-responsive">
-                                                            <table class="table table-striped table-bordered table-hover">
-                                                                <thead>
-                                                                <tr>
-
-                                                                    <th> Label </th>
-                                                                    <th> Language Label </th>
-                                                                    <th> Is Default </th>
-                                                                    <th><button><i class="fa fa-plus block "></i> </button></th>
-
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                <tr>
-                                                                    <td> Table cell </td>
-                                                                    <td> Table cell </td>
-                                                                    <td><input type="radio"> </td>
-                                                                    <td> Table cell </td>
-
-                                                                </tr>
-                                                                <tr>
-                                                                    <td> Table cell </td>
-                                                                    <td> Table cell </td>
-                                                                    <td><input type="radio"> </td>
-                                                                    <td> Table cell </td>
-
-                                                                </tr>
-                                                                <tr>
-                                                                    <td> Table cell </td>
-                                                                    <td> Table cell </td>
-                                                                    <td><input type="radio"> </td>
-                                                                    <td> Table cell </td>
-
-                                                                </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-actions">
-                                                    <div class="row">
-                                                        <div class="col-md-offset-2 col-md-9">
-                                                            <button type="submit" class="btn green">Submit</button>
-                                                            <button type="button" class="btn default">Cancel</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
                                             </div>
                                         </form>
-                                        <div class="portlet box mt">
-
+                                        <div class="form-body">
+                                        <div class="portlet box">
                                             <div class="portlet-body form">
-                                                <div class="form-body">
+                                                <h4 class="form-section">Attribute Values</h4>
                                                     <div class="form-group">
                                                         <form action="#" class="mt-repeater form-horizontal">
-                                                            <h3 class="mt-repeater-title">Attributes value</h3>
                                                             <div data-repeater-list="group-a">
                                                                 <div data-repeater-item class="mt-repeater-item">
                                                                     <!-- jQuery Repeater Container -->
@@ -938,27 +917,20 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                         <br/>
                                                                         <input type="text" name="text-input" class="form-control" value="" /> </div>
                                                                     <div class="mt-repeater-input">
-                                                                        <label class="control-label">Display label</label>
+                                                                        <label class="control-label">Display Label</label>
                                                                         <br/>
-                                                                        <input type="text" class="input-group form-control form-control-inline " size="16" type="text" value="" name=""  /> </div>
-                                                                    <div class="mt-repeater-input mt-repeater-textarea">
-                                                                        <label class="control-label">Is Default</label>
-                                                                        <br/>
-                                                                        <textarea name="textarea-input" class="form-control" rows="3">This role is to follow up with all meetings and ensure that each operational process flow moves accordingly in a timely manner.</textarea>
+                                                                        <input class="input-group form-control form-control-inline" size="16" type="text" value="English" name="date-input" data-date-format="dd/mm/yyyy" />
+                                                                        <input class="input-group form-control form-control-inline mt" size="16" type="text" value="Kannada" name="date-input" data-date-format="dd/mm/yyyy" />
+                                                                        <input class="input-group form-control form-control-inline mt" size="16" type="text" value="Hindi" name="date-input" data-date-format="dd/mm/yyyy" />
                                                                     </div>
                                                                     <div class="mt-repeater-input mt-radio-inline">
-                                                                        <label class="control-label">Tier</label>
+                                                                        <label class="control-label">Is Default</label>
                                                                         <br/>
-                                                                        <label class="mt-radio">
-                                                                            <input type="radio" name="optionsRadios" id="optionsRadios25" value="junior" checked=""> Junior
-                                                                            <span></span>
-                                                                        </label>
-                                                                        <label class="mt-radio">
-                                                                            <input type="radio" name="optionsRadios" id="optionsRadios26" value="senior" checked=""> Senior
+                                                                        <label class="mt-radio ml ">
+                                                                            <input type="radio" name="optionsRadios" id="optionsRadios25" class="mt inline-block" value="" >
                                                                             <span></span>
                                                                         </label>
                                                                     </div>
-
                                                                     <div class="mt-repeater-input">
                                                                         <a href="javascript:;" data-repeater-delete class="btn btn-danger mt-repeater-delete">
                                                                             <i class="fa fa-close"></i> Delete</a>
@@ -972,6 +944,16 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 </div>
                                             </div>
                                         </div>
+                                            <div class="form-actions">
+                                                <div class="row">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <button type="submit" class="btn green">Submit</button>
+                                                        <button type="button" class="btn grey-salsa btn-outline">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        <!-- END FORM-->
                                     </div>
                                 </div>
 

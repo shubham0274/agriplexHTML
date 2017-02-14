@@ -787,46 +787,59 @@ License: You must have a valid license purchased only from themeforest(the above
                         <!-- END PAGE TITLE-->
                         <!-- END PAGE HEADER-->
 
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="add-attributes.html">
+                                    <div class="btn-group pull-right ml">
+                                        <button class="btn green btn-outline">Add Attribute
 
+                                        </button>
+                                    </div></a>
+
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <!-- BEGIN EXAMPLE TABLE PORTLET-->
                                     <div class="portlet-body">
                                         <div class="table-toolbar">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="btn-group ">
-                                                        <button class="btn green btn-outline dropdown-toggle" data-toggle="dropdown">Filter By
-                                                            <i class="fa fa-angle-down"></i>
-                                                        </button>
-                                                        <ul class="dropdown-menu pull-right">
-                                                            <li>
-                                                                <a href="#"> Label </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#"> Option Type </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#"> Is Varience </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#"> Is Searchable </a>
-                                                            </li>
-
-                                                        </ul>
+                                            <div class="well-1 mt">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="input-name">Label Name</label>
+                                                            <input autocomplete="off" name="filter_name" value="" placeholder="" id="input-name" class="form-control" type="text"><ul class="dropdown-menu"></ul>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="input-model">Is Varience</label>
+                                                            <input autocomplete="off" name="filter_model" value="" placeholder="" id="input-model" class="form-control" type="text"><ul class="dropdown-menu"></ul>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <a href="add-attributes.html">
-                                                    <div class="btn-group pull-right ml">
-                                                        <button class="btn green btn-outline">Add Attribute
-
-                                                        </button>
-                                                    </div></a>
-
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="input-price">Option Type</label>
+                                                            <input name="filter_price" value="" placeholder="" id="input-price" class="form-control" type="text">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="input-quantity">Is Searchable</label>
+                                                            <input name="filter_quantity" value="" placeholder="" id="input-quantity" class="form-control" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="input-status">Status</label>
+                                                            <select name="filter_status" id="input-status" class="form-control">
+                                                                <option value="*"></option>
+                                                                <option value="1">Active</option>
+                                                                <option value="0">Inactive</option>
+                                                            </select>
+                                                        </div>
+                                                        <button type="button" id="button-filter" class="btn btn-primary pull-right"><i class="fa fa-search "></i> Filter</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
                                         <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
                                             <thead>
                                             <tr>
@@ -952,13 +965,12 @@ License: You must have a valid license purchased only from themeforest(the above
                                             </tr>
                                             </tbody>
                                         </table>
-                                    </div>
+
                                 </div>
                                 <!-- END EXAMPLE TABLE PORTLET-->
-                            </div>
                         </div>
-
-                            </div>
+                    </div>
+                </div>
 
 
 

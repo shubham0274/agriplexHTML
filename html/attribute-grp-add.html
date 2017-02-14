@@ -509,7 +509,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         </a>
                                     </li>
                                     <li class="nav-item  ">
-                                        <a href="inventory.html" class="nav-link ">
+                                        <a href="attribute-group.html" class="nav-link ">
                                             <span class="title">Attribute Groups</span>
                                         </a>
                                     </li>
@@ -794,56 +794,82 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <form class="form-horizontal form-row-seperated" action="#">
-                                            <div class="form-body">
+                                        <div class="portlet light portlet-fit portlet-form bordered">
+                                            <div class="portlet-body">
+                                                <!-- BEGIN FORM-->
+                                                <form action="#" id="form_sample_1" class="form-horizontal">
+                                                    <div class="form-body">
+                                                        <div class="alert alert-danger display-hide">
+                                                            <button class="close" data-close="alert"></button> Check errors.
+                                                        </div>
+                                                        <h4 class="form-section">Display Label</h4>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">English
+                                                                <span class="required"> * </span>
+                                                            </label>
+                                                            <div class="col-md-8">
+                                                                <input name="category[meta][title]" type="text" class="form-control input-medium" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">Kannada
+                                                                <span class="required"> * </span>
+                                                            </label>
+                                                            <div class="col-md-8">
+                                                                <input name="category[meta][title]" type="text" class="form-control input-medium" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">Hindi
+                                                                <span class="required"> * </span>
+                                                            </label>
+                                                            <div class="col-md-8">
+                                                                <input name="category[meta][title]" type="text" class="form-control input-medium" />
+                                                            </div>
+                                                        </div>
+                                                        <h4 class="form-section">General</h4>
+                                                        <div class="form-group">
+                                                            <label for="category_label" class="control-label col-md-3">Attribute Label
+                                                                <span class="required"> * </span>
+                                                            </label>
+                                                            <div class="col-md-8">
+                                                                <input id="category_label" type="text" name="name" data-required="1" class="input-medium form-control" /> </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="seo" class="control-label col-md-3">Sort Order
+                                                                <span class="required"> * </span>
+                                                            </label>
+                                                            <div class="col-md-8">
+                                                                <input id="seo" name="seo" type="text" class="form-control input-vsmall" /> </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">Choose Attribue
+                                                            </label>
+                                                            <div class="col-md-8">
+                                                                <select class="btn btn-default"  data-width="100%">
+                                                                    <option value="cheese">Attribute1</option>
+                                                                    <option value="tomatoes">Attribute2</option>
+                                                                    <option value="mozarella">Attribute3</option>
+                                                                    <option value="mushrooms">Attribute4</option>
+                                                                    <option value="pepperoni">Attribute15</option>
+                                                                    <option value="onions">Attribute6</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
 
-                                                <div class="form-group">
-                                                    <label class="col-md-2 control-label">Display label:
-                                                        <span class="required"> * </span>
-                                                    </label>
-                                                    <div class="col-md-10">
-                                                        <input type="text" class="form-control input-medium" name="manufacturer[name]" placeholder=""> </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-md-2 control-label">Attribute Label:
-                                                        <span class="required"> * </span>
-                                                    </label>
-                                                    <div class="col-md-10">
-                                                        <input type="text" class="form-control input-medium" name="manufacturer[category]" placeholder=""> </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-md-2 control-label">Sort Order:
-                                                        <span class="required"> * </span>
-                                                    </label>
-                                                    <div class="col-md-10">
-                                                        <input type="text" class="form-control input-medium" name="manufacturer[category]" placeholder=""> </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-md-2 control-label">Choose Attribute:
-                                                        <span class="required"> * </span>
-                                                    </label>
-                                                    <div class="col-md-8">
-                                                        <select class="btn btn-default"  data-width="100%">
-                                                            <option value="cheese">Attribute1</option>
-                                                            <option value="tomatoes">Attribute2</option>
-                                                            <option value="mozarella">Attribute3</option>
-                                                            <option value="mushrooms">Attribute4</option>
-                                                            <option value="pepperoni">Attribute15</option>
-                                                            <option value="onions">Attribute6</option>
-                                                        </select>
                                                     </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="form-actions">
-                                                <div class="row">
-                                                    <div class="col-md-offset-3 col-md-9">
-                                                        <button type="submit" class="btn green">Submit</button>
-                                                        <button type="button" class="btn default">Cancel</button>
+                                                    <div class="form-actions">
+                                                        <div class="row">
+                                                            <div class="col-md-offset-3 col-md-9">
+                                                                <button type="submit" class="btn green">Submit</button>
+                                                                <button type="button" class="btn grey-salsa btn-outline">Cancel</button>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </form>
+                                                <!-- END FORM-->
                                             </div>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
