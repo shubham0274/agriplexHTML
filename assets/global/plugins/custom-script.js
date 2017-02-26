@@ -4,15 +4,15 @@ $(document).ready(function(){
    });
 
     $('#product-btn').click(function(){
-       $('#product-config').load('create-config.html');
+       $('#product-config').load('choose-product.html');
    });
 
     $('#related-btn').click(function(){
        $('#related-product').load('related-product.html');
     });
 
-    $('#choose-product').click(function(){
-       $('#list-area').load('choose-product.html');
-    });
+    //$('#choose-product').click(function(){
+    //   $('#list-area').load('choose-product.html');
+    //});
 
 });
