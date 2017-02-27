@@ -188,3 +188,15 @@ ul.tree li:hover .hide-4{
 .pl-0{
     padding-left: 0;
 }
+@media (min-width:768px){
+    .modal-dialog{
+        width:100% !important;
+        margin:0 auto;
+    }
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 200px;
+    padding-right: 0 !important;
+}
