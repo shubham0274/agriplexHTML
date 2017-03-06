@@ -200,3 +200,10 @@ ul.tree li:hover .hide-4{
     padding-left: 200px;
     padding-right: 0 !important;
 }
+
+.btn-left{
+    text-align: left !important;
+}
+.select2-container--bootstrap .select2-selection--single .select2-selection__placeholder {
+    color: #333 !important;
+}

@@ -11,6 +11,10 @@ $(document).ready(function(){
        $('#related-product').load('related-product.html');
     });
 
+    $('#select-product').click(function(){
+       $('#selected-product').load('select-product.html');
+    });
+
     //$('#choose-product').click(function(){
     //   $('#list-area').load('choose-product.html');
     //});
