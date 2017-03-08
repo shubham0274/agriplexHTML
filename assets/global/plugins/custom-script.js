@@ -15,8 +15,4 @@ $(document).ready(function(){
        $('#selected-product').load('select-product.html');
     });
 
-    //$('#choose-product').click(function(){
-    //   $('#list-area').load('choose-product.html');
-    //});
-
 });
