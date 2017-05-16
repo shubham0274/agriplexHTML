@@ -10,9 +10,14 @@ $(document).ready(function(){
     $('#related-btn').click(function(){
        $('#related-product').load('related-product.html');
     });
-
     $('#select-product').click(function(){
        $('#selected-product').load('select-product.html');
     });
 
+    $(':checkbox').click(function() {
+        $('input:text').attr('disabled',! this.checked)
+    });
+
+
 });
+

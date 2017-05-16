@@ -209,3 +209,50 @@ ul.tree li:hover .hide-4{
     color: #333 !important;
 
 }
+.row-fix{
+    margin-left: 0;
+    margin-right: 0;
+    width: 1000px;
+    
+}
+.col-fix{
+    float: left;
+    width: 50%;
+}
+.container-s{
+
+}
+.container-s:after{
+    display: block;
+    clear: both;
+    content: '';
+}
+.wrap-1{
+    float: left;
+    width: 35%;
+}
+.wrap-2{
+    /*float: right;*/
+    overflow-x:scroll;
+    /*width: 1800px;*/
+}
+.wrap-2:after{
+    /*clear: both;*/
+    /*display: block;*/
+    /*content: '';*/
+}
+.boxy{
+    min-height: 300px;
+    border: solid 1px #eee;
+}
+.wrap-element{
+    overflow-x: auto;
+    width: 1000px;
+}
+.box{
+    box-sizing: border-box;
+    border: solid 1px #eee;
+    min-height: 300px;
+    width: 33.33%;
+    float: left;
+}
